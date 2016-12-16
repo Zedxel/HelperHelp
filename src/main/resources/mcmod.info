@@ -1,0 +1,16 @@
+[
+{
+  "modid": "helperhelp",
+  "name": "HelperHelp",
+  "description": "Used to assist Hypixel helpers.",
+  "version": "1.1.0",
+  "mcversion": "1.8.9",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Zxl"],
+  "credits": "KerbyBit, He made ChatTriggers and this is a mod that is made to be used in conjunction with Chat Triggers :D",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
