@@ -36,6 +36,7 @@ public class MessageHandler {
 	
 	public static void PrivateMessage(String Message) throws IOException{
 		if(Message.contains("{string[") && Message.contains("]}")){
+			FileHandler.LoadResponses("Message.txt");
 			String strName = Message.substring(Message.indexOf("{string[")+8, Message.indexOf("]}"));
 			FileHandler.GetString(strName, "./mods/ChatTriggers/strings.txt");
 			Message = Message.replace("{string["+strName+"]}", RefStrings.Str);
@@ -46,6 +47,7 @@ public class MessageHandler {
 	
 	public static void PrivateCycleMessage(String Message, int Remove) throws IOException{
 		if(Message.contains("{string[") && Message.contains("]}")){
+			FileHandler.LoadResponses("Message.txt");
 			String strName = Message.substring(Message.indexOf("{string[")+8, Message.indexOf("]}"));
 			FileHandler.GetString(strName, "./mods/ChatTriggers/strings.txt");
 			Message = Message.replace("{string["+strName+"]}", RefStrings.Str);

@@ -110,14 +110,14 @@ public class MainRegistry {
 			else{MessageHandler.PrivateMessage("Please select a message");}
 		}
 		else if (this.AutoSend.isPressed()) {
-			if (this.CanAutoSend == 1){
+//			if (this.CanAutoSend == 1){
 				MessageHandler.PublicMessage(RefStrings.MessageList.get(MessageNumber));
 				this.CanAutoSend = 0;
+//			}
+//			else {
+//				MessageHandler.PrivateMessage("Please select a message");
 			}
-			else {
-				MessageHandler.PrivateMessage("Please select a message");
-			}
-		}
+//		}
 		else if (this.MScrollR.isPressed()) {
 			if (MessageNumber == RefStrings.MessageList.size() - 1){
 				MessageNumber = 0;
